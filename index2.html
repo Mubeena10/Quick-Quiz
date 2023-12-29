@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="registration-container">
+            <h1>Registration-detail</h1>
+            
+                <table align="center" border="0px">
+                    
+                 <tr>   
+                    <td>Username:</td>
+                    <td><input type="text" id="username" placeholder="Enter your username" required> </br></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                    <td><input type="email" id="email" placeholder="Enter your email" required> </br></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile-Number:</td>
+                    <td><input type="Mobile-Number" id="Mobile-Number" placeholder="Enter your Mobile-Number" required> </br></td>
+                    </tr>
+
+            
+                    <tr>
+                        <td colspan="3"><button onclick="startQuiz()">Start Quiz</button></td>
+                    </tr>
+                </table>
+                    
+            
+        </div>
+
+        <div id="quiz-questions" style="display:none;">
+            <!-- Questions and Options will be dynamically added here -->
+        </div>
+
+        <div id="result-container" style="display:none;">
+            <h1>Quiz Result</h1>
+            <p id="score"></p>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
